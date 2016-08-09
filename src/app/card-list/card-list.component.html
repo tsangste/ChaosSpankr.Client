@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let card of cards" class='card-list-item'>
+    <app-card [cardNumber] ='card' (clickCard)='cardChoosen($event)' >
+
+    </app-card>
+  </li>
+</ul>
