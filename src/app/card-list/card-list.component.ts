@@ -10,12 +10,10 @@ import { CardComponent } from '../card';
   directives:[CardComponent]
 })
 export class CardListComponent implements OnInit {
-  cards:Array<number> = [1, 2, 3, 5, 8, 13];
+  cards: Array<number> = [1, 2, 3, 5, 8, 13];
   constructor() {}
 
-  ngOnInit() {
-    
-  }
+  ngOnInit() {}
 
   cardChoosen(card){
     console.log(card);
