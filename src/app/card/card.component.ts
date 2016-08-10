@@ -7,8 +7,10 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['card.component.css']
 })
 export class CardComponent implements OnInit {
-@Input() cardNumber :number;
+
+@Input() cardNumber: number;
 @Output() clickCard = new EventEmitter<number>();
+
   constructor() {}
 
   ngOnInit() {
