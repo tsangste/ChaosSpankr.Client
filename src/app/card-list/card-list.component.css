@@ -1,0 +1,7 @@
+.card-list-item{
+    display: inline-block;
+    margin: 1em;
+}
+ul{
+    list-style: none;
+}
