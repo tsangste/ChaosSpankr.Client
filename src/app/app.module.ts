@@ -13,7 +13,7 @@ import { CardComponent } from './card';
         FormsModule,
         RouterModule.forRoot(CardAppRoutes)
     ],
-    bootstrap: [AppComponent],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }

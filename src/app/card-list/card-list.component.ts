@@ -17,4 +17,5 @@ export class CardListComponent implements OnInit {
     cardChoosen(card){
         console.log(card);
     }
+
 }

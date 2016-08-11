@@ -13,8 +13,7 @@ export class CardComponent implements OnInit {
 
     constructor() {}
 
-    ngOnInit() {
-    }
+    ngOnInit() {}
 
     chooseCard(element){
         this.clickCard.emit(element);

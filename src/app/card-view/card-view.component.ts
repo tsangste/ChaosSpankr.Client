@@ -10,7 +10,6 @@ export class CardViewComponent implements OnInit {
 
     constructor() {}
 
-    ngOnInit() {
-    }
+    ngOnInit() {}
 
 }
