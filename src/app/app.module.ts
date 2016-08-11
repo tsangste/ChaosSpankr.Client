@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CardAppRoutes } from './app.routes';
 import { CardComponent } from './card';
 import { ClientArrivalViewComponent } from './client-arrival-view';
+import { SessionService } from './session.service';
 
 @NgModule({
     declarations: [AppComponent, CardComponent, ClientArrivalViewComponent],
     imports: [
         BrowserModule,
         FormsModule,
-        RouterModule.forRoot(CardAppRoutes)
+        RouterModule.forRoot(CardAppRoutes),
+
     ],
     bootstrap: [AppComponent]
 })
