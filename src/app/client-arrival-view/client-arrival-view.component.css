@@ -1,0 +1,32 @@
+.form-line{
+    padding-top:2%;
+    padding-bottom:2%;
+    width:100%;
+    height: 10%;
+}
+
+.form-input {
+    margin-left:10%;
+    width: 80%;
+    border-style: none;
+    height: 40px;
+    font-size: 16px;
+}
+
+.input-button {
+    margin-left: 30%;
+    width: 40%;
+    height: 50px;
+    background: #ABB7B7;
+}
+
+.input-button:hover {
+    background: #BDC3C7;
+}
+.input-text {
+    padding-left: 5%;
+}
+
+.rounded {
+    border-radius: 5px;
+}

@@ -5,9 +5,10 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CardAppRoutes } from './app.routes';
 import { CardComponent } from './card';
+import { ClientArrivalViewComponent } from './client-arrival-view';
 
 @NgModule({
-    declarations: [AppComponent, CardComponent],
+    declarations: [AppComponent, CardComponent, ClientArrivalViewComponent],
     imports: [
         BrowserModule,
         FormsModule,
