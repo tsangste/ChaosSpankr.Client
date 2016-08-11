@@ -22,7 +22,7 @@ export class ClientArrivalComponent implements OnInit {
   login(){
       console.log(this.name);
       console.log(this.sessionId);
-      this.router.navigate(['/cards']);
+      this.router.navigate(['/waiting']);
   }
 
 }
