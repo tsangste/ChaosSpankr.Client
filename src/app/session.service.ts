@@ -8,7 +8,7 @@ export class SessionService {
     constructor(private http: Http) {}
 
     checkSession(sessionId: string): Observable<any> {
-        let address = 'http://172.16.100.181:3000';
+        let address = 'http://0.0.0.0:3000';
         return this.http.get(`${address}?sessionId=${sessionId}`);
     }
 

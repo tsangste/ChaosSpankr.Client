@@ -1,10 +1,10 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
-  selector: 'app-client-arrival-view',
-  templateUrl: 'client-arrival-view.component.html',
-  styleUrls: ['client-arrival-view.component.css']
+    moduleId: module.id,
+    selector: 'app-client-arrival-view',
+    templateUrl: 'client-arrival-view.component.html',
+    styleUrls: ['client-arrival-view.component.css']
 })
 export class ClientArrivalViewComponent implements OnInit {
 
