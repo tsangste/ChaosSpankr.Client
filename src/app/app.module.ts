@@ -10,14 +10,14 @@ import { SessionService } from './session.service';
 import { HTTP_PROVIDERS } from '@angular/http';
 
 @NgModule({
-    declarations: [AppComponent, CardComponent, ClientArrivalViewComponent],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        RouterModule.forRoot(CardAppRoutes)
-    ],
-    bootstrap: [AppComponent],
-    providers: [HTTP_PROVIDERS, SessionService]
+  declarations: [AppComponent, CardComponent, ClientArrivalViewComponent],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot(CardAppRoutes)
+  ],
+  bootstrap: [AppComponent],
+  providers: [HTTP_PROVIDERS, SessionService]
 })
 export class AppModule {
 }

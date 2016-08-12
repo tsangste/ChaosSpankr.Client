@@ -4,7 +4,7 @@
 Error.stackTraceLimit = Infinity;
 jasmine.DEFAULT_TIMEOUT_INTERVAL = 1000;
 
-__karma__.loaded = function () {
+__karma__.loaded = function() {
 };
 
 var distPath = '/base/dist/';
@@ -20,9 +20,9 @@ function isSpecFile(path) {
 
 function isAppFile(path) {
   return isJsFile(path) && appPaths.some(function(appPath) {
-    var fullAppPath = distPath + appPath + '/';
-    return path.substr(0, fullAppPath.length) == fullAppPath;
-  });
+      var fullAppPath = distPath + appPath + '/';
+      return path.substr(0, fullAppPath.length) == fullAppPath;
+    });
 }
 
 var allSpecFiles = Object.keys(window.__karma__.files)
@@ -39,7 +39,7 @@ System.import('system-config.js').then(function() {
   return Promise.all([
     System.import('@angular/core/testing'),
     System.import('@angular/platform-browser-dynamic/testing')
-  ]).then(function (providers) {
+  ]).then(function(providers) {
     var testing = providers[0];
     var testingBrowser = providers[1];
 
@@ -50,7 +50,7 @@ System.import('system-config.js').then(function() {
   // Finally, load all spec files.
   // This will run the tests directly.
   return Promise.all(
-    allSpecFiles.map(function (moduleName) {
+    allSpecFiles.map(function(moduleName) {
       return System.import(moduleName);
     }));
 }).then(__karma__.start, __karma__.error);

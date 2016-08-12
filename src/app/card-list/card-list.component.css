@@ -1,7 +1,8 @@
-.card-list-item{
-    display: inline-block;
-    margin: 1em;
+.card-list-item {
+  display: inline-block;
+  margin: 1em;
 }
-ul{
-    list-style: none;
+
+ul {
+  list-style: none;
 }
