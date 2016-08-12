@@ -23,8 +23,9 @@ export class ClientArrivalComponent implements OnInit {
     login() {
         console.log(this.name);
         console.log(this.sessionId);
-        this.sessionService.checkSession(this.sessionId).subscribe(
-            (result) => {
+        this.sessionService
+            .checkSession(this.sessionId)
+            .subscribe((result) => {
                 if (result.status === 200) {
                     console.log(true);
                     this.router.navigate(['/waiting']);
