@@ -38,8 +38,8 @@ const barrels: string[] = [
     'app/card-list',
     'app/card-view',
     'app/client-arrival',
-  'app/client-arrival-view',
-  'app/waitingroom',
+    'app/client-arrival-view',
+    'app/waitingroom',
   /** @cli-barrel */
 ];
 

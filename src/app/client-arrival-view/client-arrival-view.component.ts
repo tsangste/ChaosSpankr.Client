@@ -12,13 +12,13 @@ export class ClientArrivalViewComponent implements OnInit {
     @Input() sessionId: string;
     @Output() loginEvent = new EventEmitter<string>();
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
-  login() {
-      this.loginEvent.emit();
-  }
+    login() {
+          this.loginEvent.emit();
+    }
 
 }

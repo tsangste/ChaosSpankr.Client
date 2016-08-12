@@ -13,7 +13,7 @@ export class ClientArrivalComponent implements OnInit {
     name: string;
     sessionId: string;
 
-    constructor(private router: Router, private sessionService: SessionService) { }
+    constructor(private router: Router, private sessionService: SessionService) {}
 
     ngOnInit() {
         this.name = '';
