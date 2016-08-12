@@ -2,19 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-    moduleId: module.id,
-    selector: 'app-waitingroom',
-    templateUrl: 'waitingroom.component.html',
-    styleUrls: ['waitingroom.component.css']
+  moduleId: module.id,
+  selector: 'app-waitingroom',
+  templateUrl: 'waitingroom.component.html',
+  styleUrls: ['waitingroom.component.css']
 })
 export class WaitingRoomComponent implements OnInit {
 
-    constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
-    ngOnInit() {
-        setInterval(() => {
-            this.router.navigate(['/cards']);
-        }, 5000);
-    }
+  ngOnInit() {
+    setInterval(() => {
+      this.router.navigate(['/cards']);
+    }, 5000);
+  }
 
 }
