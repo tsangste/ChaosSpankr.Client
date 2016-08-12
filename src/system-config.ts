@@ -37,7 +37,10 @@ const barrels: string[] = [
     'app/card',
     'app/card-list',
     'app/card-view',
-    /** @cli-barrel */
+    'app/client-arrival',
+    'app/client-arrival-view',
+    'app/waitingroom',
+  /** @cli-barrel */
 ];
 
 const cliSystemConfigPackages: any = {};
