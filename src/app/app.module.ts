@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HTTP_PROVIDERS } from '@angular/http';
+import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
@@ -16,10 +16,11 @@ import { GlobalSettingsService } from './globalSettings.service';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpModule,
     RouterModule.forRoot(CardAppRoutes)
   ],
   bootstrap: [AppComponent],
-  providers: [HTTP_PROVIDERS, GlobalSettingsService, SessionService]
+  providers: [GlobalSettingsService, SessionService]
 })
 export class AppModule {
 }
