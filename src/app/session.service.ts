@@ -2,11 +2,12 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Http } from '@angular/http';
 import { GlobalSettingsService } from './globalSettings.service';
+import { IConfig } from './models/config/iconfig';
 
 @Injectable()
 export class SessionService {
 
-  config;
+  config: IConfig;
 
   constructor(private http: Http, private globalSettingsService: GlobalSettingsService ) {
     this.config = globalSettingsService.get();
