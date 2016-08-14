@@ -10,7 +10,7 @@ export class SessionService {
     this.config = globalSettingsService.get();
   }
 
-  create(){
+  create(): Observable<any> {
     return this.http.post(`${this.config.apiUrl}/sessions`, {});
   }
 
@@ -18,15 +18,15 @@ export class SessionService {
     return this.http.get(`${this.config.apiUrl}?sessionId=${sessionId}`);
   }
 
-  end(sessionId: string){
+  end(sessionId: string): Observable<any> {
     return this.http.delete(`${this.config.apiUrl}/sessions/${sessionId}`);
   }
 
-  setStatus(sessionId: string, state: string){
+  setStatus(sessionId: string, state: string): Observable<any> {
     return this.http.put(`${this.config.apiUrl}/sessions/${sessionId}`, {'state': state});
   }
 
-  addUser(sessionId: string, userId: string){
+  addUser(sessionId: string, userId: string): Observable<any> {
     return this.http.put(`${this.config.apiUrl}/sessions/${sessionId}/user`, {
       'userId': userId
     });
