@@ -3,6 +3,7 @@ import { Config } from './app.config';
 
 @Injectable()
 export class GlobalSettingsService {
+
   config = Config;
 
   constructor() {
@@ -11,4 +12,5 @@ export class GlobalSettingsService {
   get() {
     return this.config;
   }
+
 }

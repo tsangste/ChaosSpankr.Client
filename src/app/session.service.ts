@@ -5,7 +5,9 @@ import { GlobalSettingsService } from './globalSettings.service';
 
 @Injectable()
 export class SessionService {
+
   config;
+
   constructor(private http: Http, private globalSettingsService: GlobalSettingsService ) {
     this.config = globalSettingsService.get();
   }
