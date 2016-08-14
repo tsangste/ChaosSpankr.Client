@@ -26,7 +26,9 @@ export class SessionService {
   }
 
   setStatus(sessionId: string, state: string): Observable<any> {
-    return this.http.put(`${this.config.apiUrl}/sessions/${sessionId}`, {'state': state});
+    return this.http.put(`${this.config.apiUrl}/sessions/${sessionId}`, {
+      'state': state
+    });
   }
 
   addUser(sessionId: string, userId: string): Observable<any> {
