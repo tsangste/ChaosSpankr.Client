@@ -24,7 +24,7 @@ export class ClientArrivalComponent implements OnInit {
     console.log(this.name);
     console.log(this.sessionId);
     this.sessionService
-      .checkSession(this.sessionId)
+      .get(this.sessionId)
       .subscribe((result) => {
         if (result.status === 200) {
           console.log(true);
