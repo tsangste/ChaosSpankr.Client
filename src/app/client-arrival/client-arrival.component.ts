@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { SessionService } from '../session.service';
 
 @Component({
-  moduleId: module.id,
   selector: 'app-client-arrival',
   templateUrl: 'client-arrival.component.html',
   styleUrls: ['client-arrival.component.css']
