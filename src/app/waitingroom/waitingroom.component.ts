@@ -3,8 +3,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-waitingroom',
-  templateUrl: 'waitingroom.component.html',
-  styleUrls: ['waitingroom.component.css']
+  templateUrl: './waitingroom.component.html',
+  styleUrls: ['./waitingroom.component.css']
 })
 export class WaitingRoomComponent implements OnInit {
 

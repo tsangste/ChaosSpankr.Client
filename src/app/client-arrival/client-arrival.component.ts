@@ -4,8 +4,8 @@ import { SessionService } from '../session.service';
 
 @Component({
   selector: 'app-client-arrival',
-  templateUrl: 'client-arrival.component.html',
-  styleUrls: ['client-arrival.component.css']
+  templateUrl: './client-arrival.component.html',
+  styleUrls: ['./client-arrival.component.css']
 })
 export class ClientArrivalComponent implements OnInit {
 
