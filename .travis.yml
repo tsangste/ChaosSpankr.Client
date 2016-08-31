@@ -1,5 +1,6 @@
 sudo: required
 dist: trusty
+
 language: node_js
 node_js:
   - 'node'
@@ -22,7 +23,6 @@ before_install:
   - sh -e /etc/init.d/xvfb start
 
 install:
-  - npm install -g typescript@beta
   - npm install -g angular-cli@webpack
   - npm install
 
