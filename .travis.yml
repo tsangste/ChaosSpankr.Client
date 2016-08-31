@@ -29,4 +29,5 @@ install:
 before_script:
 - ng build
 
-script: karma start config/karma.conf.js --single-run
+script:
+- ng test --watch false
