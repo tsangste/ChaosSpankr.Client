@@ -22,8 +22,8 @@ before_install:
   - sh -e /etc/init.d/xvfb start
 
 install:
+  - npm install -g typescript@beta
   - npm install -g angular-cli@webpack
-  - npm install -g karma
   - npm install
 
 before_script:
