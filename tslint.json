@@ -13,7 +13,7 @@
     "forin": true,
     "indent": [
       true,
-      2
+      "spaces"
     ],
     "label-position": true,
     "label-undefined": true,
